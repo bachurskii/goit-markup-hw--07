@@ -290,7 +290,7 @@ ul {
   }
   .list-modal-mobile {
     display: flex;
-    gap: 56px;
+    gap: 36px;
     list-style: none;
   }
   .mobile-list-modal {
