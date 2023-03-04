@@ -137,7 +137,10 @@
             <li class="action-teams">
               <img
                 class="img"
-                crcset="/img/action/img_desk@1x.jpg 1x, /img/action/img_desk@2x.jpg 2x"
+                srcset="
+                  /img/action/img_desk@1x.jpg 1x,
+                  /img/action/img_desk@2x.jpg 2x
+                "
                 src="./img/action/statistics.jpg"
                 alt="mains creen"
                 width="360"
@@ -146,7 +149,10 @@
             <li class="action-teams">
               <img
                 class="img"
-                crcset="/img/action/img2_desk@1x.jpg 1x, /img/action/img2_desk@2x.jpg 2x"
+                srcset="
+                  /img/action/img2_desk@1x.jpg 1x,
+                  /img/action/img2_desk@2x.jpg 2x
+                "
                 src="./img/action/phones.jpg"
                 alt="messages"
                 width="360"
@@ -173,20 +179,36 @@
           <h2 class="subtitle subtittle-our-team">Our team</h2>
           <ul class="second-picture list">
             <li>
-              <img
-                class="img"
-                srcset="
-                  ./img/team/img-1_tab.jpg   1x,
-                  /img/team/img-1_tab@2x.jpg 2x
-                "
-                srcset="
-                  ./img/team/img-1_tel.jpg   1x,
-                  /img/team/img-1_tel@2x.jpg 2x
-                "
-                src="./img/team/mark.jpg"
-                alt="product designer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/img-1_desk.jpg    1x,
+                    ./img/team/img-1_desk@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-1_tab.jpg    1x,
+                    ./img/team/img-1_tab@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./img/team/img-1_tel@1x.jpg 1x,
+                    ./img/team/img-1_tel@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <img
+                  class="img"
+                  src="./img/team/mark.jpg"
+                  alt="product designer"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="teams minor">Mark Guerrero</h3>
                 <p class="teams-indent indent">Product Designer</p>
@@ -224,20 +246,32 @@
             </li>
 
             <li>
-              <img
-                class="img"
-                srcset="
-                  ./img/team/img-2_tab.jpg   1x,
-                  /img/team/img-2_tab@2x.jpg 2x
-                "
-                srcset="
-                  ./img/team/img-2_tel.jpg   1x,
-                  /img/team/img-2_tel@2x.jpg 2x
-                "
-                src="./img/team/tom.jpg"
-                alt="frontend developer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="img-2_desk.jpg 1x, img-2_desk@2x.jpg 2x"
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-2_tab.jpg    1x,
+                    ./img/team/img-2_tab@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-2_tel.jpg    1x,
+                    ./img/team/img-2_tel@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <img
+                  class="img"
+                  src="./img/team/tom.jpg"
+                  alt="frontend developer"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="teams minor">Tom Ford</h3>
                 <p class="teams-indent indent">Frontend Developer</p>
@@ -274,20 +308,33 @@
               </div>
             </li>
             <li>
-              <img
-                class="img"
-                srcset="
-                  ./img/team/img-3_tab.jpg   1x,
-                  /img/team/img-3_tab@2x.jpg 2x
-                "
-                srcset="
-                  ./img/team/img-3_tel.jpg   1x,
-                  /img/team/img-3_tel@2x.jpg 2x
-                "
-                src="./img/team/woman.jpg"
-                alt="Marketing"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="img-3_desk.jpg 1x, img-3_desk@2x.jpg 2x"
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-3_tab.jpg   1x,
+                    /img/team/img-3_tab@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-3_tel.jpg   1x,
+                    /img/team/img-3_tel@2x.jpg 2x
+                  "
+                  type="team/svg"
+                />
+
+                <img
+                  class="img"
+                  src="./img/team/woman.jpg"
+                  alt="Marketing"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="teams minor">Camila Garcia</h3>
                 <p class="teams-indent indent">Marketing</p>
@@ -324,20 +371,32 @@
               </div>
             </li>
             <li>
-              <img
-                class="img"
-                srcset="
-                  ./img/team/img-4_tab.jpg   1x,
-                  /img/team/img-4_tab@2x.jpg 2x
-                "
-                srcset="
-                  ./img/team/img-4_tel.jpg   1x,
-                  /img/team/img-4_tel@2x.jpg 2x
-                "
-                src="./img/team/dani.jpg"
-                alt="Designer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="img-4_desk.jpg 1x, img-4_desk@2x.jpg 2x"
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-4_tab.jpg   1x,
+                    /img/team/img-4_tab@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/img-4_tel.jpg   1x,
+                    /img/team/img-4_tel@2x.jpg 2x
+                  "
+                  type="team/jpg"
+                />
+                <img
+                  class="img"
+                  src="./img/team/dani.jpg"
+                  alt="Designer"
+                  width="264"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="teams minor">Daniel Wilson</h3>
                 <p class="teams-indent indent">Ul Designer</p>
@@ -493,7 +552,7 @@
       </div>
     </footer>
     <!--Mobile window-->
-    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <div class="menu-container js-menu-container is-hidden" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -567,7 +626,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="botton" data-modal-close>
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./img/icons.svg#icon-close-modal"></use>
           </svg>
@@ -604,8 +663,6 @@
             class="text-coment"
             name="user-comment"
             id="user-comment"
-            cols=""
-            rows=""
             placeholder="Text input"
           ></textarea>
           <label class="modal-form-agreemnt">
