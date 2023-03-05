@@ -592,13 +592,7 @@ ul {
     height: 112px;
     margin-bottom: 8px;
   }
-  .minor {
-    font-weight: 500px;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-  }
+
   .indent {
     font-size: 16px;
     font-weight: 400;
@@ -653,6 +647,7 @@ ul {
   }
 
   .subtittle-our-team {
+    font-size: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,6 +732,7 @@ ul {
     padding-bottom: 96px;
   }
   .title-client {
+    font-size: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -962,6 +958,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .subfooter {
     width: 264px;
+    margin-bottom: 0;
   }
   .herofooter {
     padding-top: 100px;
@@ -993,6 +990,7 @@ ul {
   .hero-spant {
     text-align: left;
     margin-left: 120px;
+    margin-bottom: 0;
   }
   .email-form {
     display: flex;
@@ -1006,6 +1004,7 @@ ul {
   .input-mail {
     width: 264px;
     margin-right: 24px;
+    margin-bottom: 0;
   }
   .button-footer {
     margin: inherit;
@@ -1142,13 +1141,15 @@ ul {
 }
 .modal {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   min-height: 584px;
   width: 284px;
   background-color: #fcfcfc;
   padding: 74px 24px 24px;
+  max-width: 768px;
+  width: 90%;
 }
 .modal-btn {
   position: absolute;
@@ -1300,9 +1301,12 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color;
-  margin-left: 35px;
+
   width: 169px;
   height: 56px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .button-modal-send:hover {
   background-color: var(--color4);
@@ -1348,10 +1352,8 @@ ul {
 @media screen and (min-width: 768px) {
   .modal {
     top: 50%;
-    left: 50%;
+
     width: 408px;
-  }
-  .button-modal-send {
-    margin-left: 96px;
+    transform: translate(-50%, -40%);
   }
 }
