@@ -1049,13 +1049,28 @@ ul {
 .roster {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
-.buttons-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+
+@media screen and (min-width: 768px) {
+  .roster {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .roster {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 72px;
+  }
 }
 /* Portfolio-cards*/
 .links {
@@ -1066,9 +1081,10 @@ ul {
 }
 .card-images {
   display: flex;
+  flex-direction: column;
   gap: 48px 24px;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
+  margin-bottom: 48px;
 }
 .second-card-content {
   padding-top: 32px;
@@ -1121,7 +1137,19 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px) {
+  .card-images {
+    flex-basis: calc(100% / 2);
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-images {
+    flex-basis: calc(100% / 3);
+    margin-bottom: 120px;
+    margin-top: 72px;
+  }
+}
 /*Modal */
 .backdrop {
   position: fixed;
